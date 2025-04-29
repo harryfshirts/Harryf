@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harryf</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000;
+        }
+        header, section, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+        }
+        .slogan {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        /* Carrossel Automático */
+        #carousel-auto {
+            max-height: 500px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        .carousel-container {
+            display: flex;
+            width: 300%;
+            animation: slide 15s 1;
+        }
+        .carousel-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        @keyframes slide {
+            0% {transform: translateX(0%);}
+            33% {transform: translateX(-100%);}
+            66% {transform: translateX(-200%);}
+            100% {transform: translateX(0%);}
+        }
+        /* Swiper Carrossel */
+        #carousel-swiper {
+            display: none;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        h2, h3 {
+            font-family: 'Cinzel', serif;
+        }
+        ul {
+            list-style-position: inside;
+            text-align: center;
+            padding: 0;
+        }
+        .loja-btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .contato p a {
+            color: black;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+        .contato img {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Harryf©</h1>
+    <p class="slogan">Você nasceu para reinar.<br>Vista o que te representa.<br>Harryf — Inspirado em Isaías 9:6</p>
+</header>
+
+<!-- Carrossel Automático -->
+<section id="carousel-auto">
+    <div class="carousel-container">
+        <img src="produto1.jpg" alt="Visão">
+        <img src="produto2.jpg" alt="Propósito">
+        <img src="produto3.png" alt="Marca">
+    </div>
+</section>
+
+<!-- Carrossel Swiper -->
+<section id="carousel-swiper" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="produto1.jpg" alt="Visão"></div>
+        <div class="swiper-slide"><img src="produto2.jpg" alt="Propósito"></div>
+        <div class="swiper-slide"><img src="produto3.png" alt="Marca"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
+
+<section id="sobre">
+    <h2>Você sabe qual o significado de Harryf?</h2>
+    <p>A marca Harryf nasce da força e da promessa contida em <a href="https://www.bibliaon.com/isaias_9_6_titulos_de_jesus/" style="color:blue;" target="_blank">Isaías 9:6</a>, que diz:<br>
+    "Porque um menino nos nasceu, um filho se nos deu; o governo está sobre os seus ombros; e o seu nome será: Maravilhoso Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz."</p>
+
+    <p>O nome "Harry" tem origem germânica e significa "governante do lar" ou "líder do exército" — uma referência direta à liderança, responsabilidade e força. Já o "F" no final representa fé, firmeza e o filho de Deus. Assim, Harryf carrega em si o peso de uma identidade real: quem veste a marca veste propósito.</p>
+
+    <p>A coroa em nossa logo não é só estética — é simbólica. Representa o governo, o domínio e a promessa descrita em Isaías. Um Rei que veio à Terra nos ensinar a viver e, por amor de nós, deu sua vida para nos salvar.
+    Cada peça da Harryf carrega esse manifesto: respeito, atitude e valores eternos.<br>Harryf é sobre vestir Quem você crê.</p>
+</section>
+
+<section id="produtos">
+    <h2>Produtos da Marca</h2>
+    <ul>
+        <li>Camisetas</li>
+        <li>Shorts</li>
+        <li>Camisas polo</li>
+        <li>Moletons</li>
+    </ul>
+    <a href="https://harryfshirts.lojavirtualnuvem.com.br" class="loja-btn" target="_blank">Visitar Loja Online</a>
+</section>
+
+<section class="contato">
+    <h2>Contato</h2>
+    <p>(43) 9 9648-1315</p>
+    <p><a href="mailto:Hemerson.redessociais@gmail.com">Hemerson.redessociais@gmail.com</a></p>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+    <a href="https://www.instagram.com/harryfshirts?igsh=MXh3dmd1MGY1b3h1dg%3D%3D&utm_source=qr" target="_blank">@harryfshirts</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Harryf. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    });
+
+    // Após 15 segundos, troca do carrossel automático para o Swiper
+    setTimeout(() => {
+        document.getElementById("carousel-auto").style.display = "none";
+        document.getElementById("carousel-swiper").style.display = "block";
+    }, 15000);
+</script>
+
+</body>
+</html>
