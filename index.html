@@ -28,9 +28,10 @@
             margin-top: 10px;
         }
         #carousel {
-            margin: 20px auto;
-            width: 90%;
-            overflow: hidden;
+            max-height: 500px ;
+            overflow: hidden ;
+            margin: 20px auto ;
+            
         }
         .carousel-container {
             display: flex;
@@ -39,7 +40,9 @@
         }
         .carousel-container img {
             width: 100%;
-            flex-shrink: 0;
+            height: auto ;
+            object-fit: cover ;
+
         }
         @keyframes slide {
             0% {transform: translateX(0%);}
