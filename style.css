@@ -36,7 +36,7 @@ section {
 
     ul {
     list-style-position: inside;
-    text-align: center;
+    text-align: inside;
     padding: 0;
 }
 
