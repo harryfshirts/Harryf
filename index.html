@@ -197,6 +197,18 @@
         document.getElementById("carousel-auto").style.display = "none";
         document.getElementById("carousel-swiper").style.display = "block";
     }, 0000 );
+    const catalogSwiper = new Swiper(".catalogSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        600: { slidesPerView: 2 },
+        900: { slidesPerView: 3 },
+    }
+});
     
 </script>
 
