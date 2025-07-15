@@ -128,43 +128,46 @@
 </section>
 
 <section id="produtos">
-    <h2>Catálogo Harryf</h2>
+    <h2>Catálago harryf</h2>
 
-    <div class="swiper catalogSwiper" style="padding: 20px;">
-        <div class="swiper-wrapper">
-            <!-- PRODUTO 1 -->
-            <div class="swiper-slide" style="width: 250px; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
-                <img src="produtoLoja1.png" alt="Camiseta Bereanos verde" style="width: 100%; border-radius: 8px;">
-                <h3 style="font-size: 16px; margin: 10px 0;">Camiseta Bereanos Verde</h3>
-                <p style="font-weight: bold;">R$ 49,90</p>
-                <a href="" target="_blank" style="display: inline-block; padding: 8px 12px; background-color: black; color: white; border-radius: 5px; text-decoration: none;">Comprar</a>
+    <div style="max-width: 1100px; margin: 0 auto; padding: 20px;">
+        <div class="swiper catalogSwiper">
+            <div class="swiper-wrapper" style="display: flex; align-items: stretch;">
+                
+                <!-- PRODUTO 1 -->
+                <div class="swiper-slide" style="width: 180px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; background: #fff; text-align: center;">
+                    <img src="produtoLoja1.png" alt="Camiseta Look Preta" style="width: 100%; border-radius: 8px;">
+                    <h3 style="font-size: 14px; margin: 10px 0;">Camiseta Look Preta</h3>
+                    <p style="font-weight: bold;">R$ 89,90</p>
+                    <a href="https://wa.me/5543996481315?text=Quero%20comprar%20a%20Camiseta%20Look%20Preta" target="_blank" style="display: inline-block; padding: 6px 10px; background-color: black; color: white; border-radius: 4px; text-decoration: none; font-size: 14px;">Comprar</a>
+                </div>
+
+                <!-- PRODUTO 2 -->
+                <div class="swiper-slide" style="width: 180px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; background: #fff; text-align: center;">
+                    <img src="produto2.jpg" alt="Shorts Essencial" style="width: 100%; border-radius: 8px;">
+                    <h3 style="font-size: 14px; margin: 10px 0;">Shorts Essencial</h3>
+                    <p style="font-weight: bold;">R$ 99,90</p>
+                    <a href="https://wa.me/5543996481315?text=Quero%20comprar%20o%20Shorts%20Essencial" target="_blank" style="display: inline-block; padding: 6px 10px; background-color: black; color: white; border-radius: 4px; text-decoration: none; font-size: 14px;">Comprar</a>
+                </div>
+
+                <!-- PRODUTO 3 -->
+                <div class="swiper-slide" style="width: 180px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; background: #fff; text-align: center;">
+                    <img src="produto3.png" alt="Moletom Fé" style="width: 100%; border-radius: 8px;">
+                    <h3 style="font-size: 14px; margin: 10px 0;">Moletom Fé</h3>
+                    <p style="font-weight: bold;">R$ 139,90</p>
+                    <a href="https://wa.me/5543996481315?text=Quero%20comprar%20o%20Moletom%20Fé" target="_blank" style="display: inline-block; padding: 6px 10px; background-color: black; color: white; border-radius: 4px; text-decoration: none; font-size: 14px;">Comprar</a>
+                </div>
+
+                <!-- Adicione mais aqui -->
+
             </div>
-
-            <!-- PRODUTO 2 -->
-            <div class="swiper-slide" style="width: 250px; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
-                <img src="produtoLoja2.jpg" alt="Shorts Essencial" style="width: 100%; border-radius: 8px;">
-                <h3 style="font-size: 16px; margin: 10px 0;">Shorts Essencial</h3>
-                <p style="font-weight: bold;">R$ 99,90</p>
-                <a href="https://wa.me/5543996481315?text=Quero%20comprar%20o%20Shorts%20Essencial" target="_blank" style="display: inline-block; padding: 8px 12px; background-color: black; color: white; border-radius: 5px; text-decoration: none;">Comprar</a>
-            </div>
-
-            <!-- PRODUTO 3 -->
-            <div class="swiper-slide" style="width: 250px; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
-                <img src="produtoLoja3.png" alt="Moletom Fé" style="width: 100%; border-radius: 8px;">
-                <h3 style="font-size: 16px; margin: 10px 0;">Moletom Fé</h3>
-                <p style="font-weight: bold;">R$ 139,90</p>
-                <a href="https://wa.me/5543996481315?text=Quero%20comprar%20o%20Moletom%20Fé" target="_blank" style="display: inline-block; padding: 8px 12px; background-color: black; color: white; border-radius: 5px; text-decoration: none;">Comprar</a>
-            </div>
-
-            <!-- ADICIONE MAIS PRODUTOS AQUI -->
-
+            <div class="swiper-pagination" style="margin-top: 15px;"></div>
         </div>
-        <div class="swiper-pagination"></div>
     </div>
 
-    <a href="https://harryf.Lojavirtualnuvem.com.br" class="loja-btn" target="_blank">Veja o catálogo completo</a>
+    <a href="https://Dropastreetwear.Lojavirtualnuvem.com.br" class="loja-btn" target="_blank" style="display: inline-block; margin-top: 10px;">Veja o catálogo completo</a>
 </section>
-
+        
 <section class="contato">
     <h2>Contato</h2>
     <p>(43) 9 9648-1315</p>
@@ -199,16 +202,16 @@
     }, 0000 );
     
     const catalogSwiper = new Swiper(".catalogSwiper", {
-    slidesPerView: 3,
-   spaceBetween: 20,
+    slidesPerView: 1.3,
+    spaceBetween: 16,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    
     breakpoints: {
-        600: { slidesPerView: 2 },
-        900: { slidesPerView: 3 },
+        480: { slidesPerView: 2.2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 },
     }
 });
     
